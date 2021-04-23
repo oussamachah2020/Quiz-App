@@ -1,0 +1,96 @@
+// const question = new Map([
+//   ["question", "what's is best programming language :"],
+//   [1, "Python"],
+//   [2, "C"],
+//   [3, "Javascript"],
+//   ["correct", 2],
+//   [true, "correct answer🎉"],
+//   [false, "wrong answer 🎈"],
+// ]);
+// let btn_all = document.querySelectorAll(".btn_click");
+// console.log(question.get("question"));
+// for (const [key, value] of question) {
+//   if (typeof key === "number") {
+//     btn_all[key - 1].textContent = value;
+//     console.log(key, value);
+//   }
+// }
+// let answer = Number(prompt("Enter the answer :"));
+
+// question.get("correct") === answer
+//   ? console.log(question.get(true))
+//   : console.log(
+//       `${question.get(false)},Correct question is ${question.get(
+//         "correct"
+//       )} : ${question.get(question.get("correct"))}`
+//     );
+// for (const iterator of btn_all) {
+//   iterator.addEventListener("click", function () {
+//     let answer = Number(this.value);
+//     console.log(question.get(question.get("correct") === answer));
+//   });
+// }
+//1. array maps :
+//2. event click ,verification with correct answer
+//3.function survy array , sort()
+//4.function redamage diyal timer
+//5.function skip question timer == 0
+//=>div > div change background-color
+//6.function score
+//7.function rate
+// function max_(...arg) {
+//   console.log(...arg);
+//   // console.log(Math.max(...arg));
+// }
+
+// max_(12, 244, 35, 365, 244);
+// console.log(Math.max(12, 244, 35, 365, 244));
+// method array = destruct;
+//... spread operator
+// let arr1 = [1, 2, 5];
+// let arr2 = [3, 57, 7];
+// // let total = arr1.concat(arr2);
+// // let total = arr1 + arr2;
+// let total = [...arr1, ...arr2];
+// let [one, , , , two] = [1, 2, 3, 4, 5];
+ console.log(one, two);
+
+const obj = {
+  test: "test",
+  // name: "test",
+  test1: "test",
+};
+let { test: custom_name, name: custom_name_1 = null } = obj;
+console.log(custom_name, custom_name_1);
+// 1.module js
+// 2.module functions:
+//3.function verification,skip
+
+
+/*let q_a = [
+  new Map([
+    ["question", "test question"],
+    [1, "choice 1"],
+    [2, "choice 2"],
+    [3, "choice 3"],
+    [4, "choice 4"],
+    ["correct", 1],
+  ]),
+  new Map([
+    ["question", "test question 2"],
+    [1, "choice 1"],
+    [2, "choice 2"],
+    ["correct", 2],
+  ]),
+];
+const random = Math.trunc(Math.random() * q_a.length);
+function show_q(map) {
+  console.log(map.get("question"));
+  for (const [i, element] of map) {
+    if (Number(i)) {
+      // console.log(`${i}:${element}`);
+      document.querySelector(`choice_${i}`).innerHTML = element;
+    }
+  }
+}
+show_q(q_a[random]);*/

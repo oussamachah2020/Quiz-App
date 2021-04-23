@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="welcome-page">
+        <h1 class="title">Welcome To this Quiz!!</h1>
+        <p class="intro">You will answer some questions to test your informations in the tech domain
+            you will get a percentage for the correct answers so if you are ready press the Start button.
+            <p class="alert">Your have 15 seconds for each question!</p>
+        </p>
+        <button class="startbtn">Start</button>
+    </div>
+    <div class="Quiz-Page">
+        <h1>Quiz</h1>
+        <h2 class="question"></h2>
+        <div class="btn-container">
+            <button value="1" class="AnswerBtn"></button>
+            <button value="2" class="AnswerBtn"></button>
+            <button value="3" class="AnswerBtn"></button>
+            <button value="4" class="AnswerBtn"></button>
+        </div>
+        <div class="timing">
+            <img src="image/time.png" id="counter">
+            <span id="value">00</span>
+
+        </div>
+        <button class="next-Q">next</button>
+        <button class="submit">Show Results</button>
+    </div>
+
+    <div class="result-page">
+        <h1>Results</h1>
+        <div id="emoji"></div>
+        <p>Your percentage is: <span id="percentage"></span>
+        </p>
+    </div>
+    <script type="module" src="Quiz.js"></script>
+</body>
+</html>

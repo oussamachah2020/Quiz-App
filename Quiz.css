@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background: #2e3f64;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.title, .intro {
+  color: white;
+  text-align: center;
+  font-family: 'Zen Dots', cursive;
+  margin: 50px 0 0 0;
+}
+
+.intro {
+  width: 50%;
+  line-height: 2pc;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10pc 0 0 20pc;
+}
+
+button.startbtn {
+  border: none;
+  outline: none;
+  margin: 5pc 0 0 35pc;
+  padding: 10px 3pc 10px 3pc;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: 'Zen Dots', cursive;
+  background-color: #18c818;
+  color: white;
+}
+
+.Quiz-Page {
+  position: relative;
+  bottom: 33pc;
+  -webkit-transition: .5s;
+  transition: .5s;
+  visibility: hidden;
+}
+
+.Quiz-Page h1 {
+  color: white;
+  font-family: 'Zen Dots', cursive;
+  text-align: center;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.Quiz-Page .submit {
+  margin-left: 13pc;
+  border: none;
+  outline: none;
+  padding: 10px 2.5pc 10px 2pc;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.Quiz-Page .submit {
+  opacity: 0;
+}
+
+.Quiz-Page .submit:hover {
+  background-color: rgba(211, 211, 211, 0.63);
+}
+
+.question {
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 40px 10px 40px 20px;
+  width: 63%;
+  font-size: 20px;
+  text-align: center;
+  margin: 5pc 0 0 16pc;
+  border-radius: 10px;
+}
+
+.btn-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 1px;
+}
+
+.AnswerBtn {
+  margin: 50px 0 0 16pc;
+  width: 27%;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.next-Q {
+  margin: 5pc 0 0 37.5pc;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  border: none;
+  outline: none;
+  padding: 10px 2.5pc 10px 2pc;
+  border-radius: 10px;
+  cursor: pointer;
+  background-image: url("image/right.png");
+  background-repeat: no-repeat;
+  background-position: 4.4pc 7px;
+  background-color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.next-Q:hover {
+  opacity: .7;
+}
+
+.timing {
+  margin-left: 37.5pc;
+}
+
+.timing span {
+  background-color: white;
+  border-radius: 50%;
+  padding: 1.3pc 1.3pc 1.3pc 1.3pc;
+  position: relative;
+  bottom: 36px;
+  right: 6pc;
+  font-size: 25px;
+  font-weight: bold;
+  border: 2px solid gray;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.welcome-page {
+  visibility: visible;
+}
+
+.welcome-page .alert {
+  text-align: center;
+  margin-top: 30px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  font-family: 'Zen Dots', cursive;
+  color: #e26262;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.show-page {
+  visibility: visible;
+}
+
+.hide-page {
+  opacity: 0;
+}
+
+.result-page {
+  position: relative;
+  bottom: 63pc;
+  text-align: center;
+  opacity: 0;
+}
+
+.result-page h1 {
+  color: white;
+  font-family: 'Zen Dots', cursive;
+  -webkit-text-decoration: underline 2px;
+          text-decoration: underline 2px;
+}
+
+.result-page p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  margin: 7pc 0 0 0;
+  font-size: 25px;
+}
+
+.result-page #percentage {
+  color: #4b4a4a;
+  padding: 10px 20px 10px 20px;
+  border: 2px solid #18c818;
+  background: linear-gradient(80deg, #52e752, white, #e65353);
+}
+/*# sourceMappingURL=Quiz.css.map */
