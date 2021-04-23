@@ -48,7 +48,7 @@ button.startbtn {
 
 .Quiz-Page {
   position: relative;
-  bottom: 33pc;
+  bottom: 30pc;
   -webkit-transition: .5s;
   transition: .5s;
   visibility: hidden;
