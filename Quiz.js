@@ -31,6 +31,9 @@ function countDown() {
         QuestionNumber++;
         showQ();
         ShowChoices(QaA[QuestionNumber]);
+        AnswerBtn.forEach((btn) => {
+        btn.style.backgroundColor = "white";
+        });
         //<------------------------------------------------>
 
         repeatCounter(); //when the counter end it starts over!
