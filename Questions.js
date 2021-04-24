@@ -1,8 +1,8 @@
 export let QaA = [
     new Map([
         ["question", "When the first programming language was founded ?"],
-        [1, "1956"],
-        [2, "1948"],
+        [1, "1949"],
+        [2, "1956"],
         [3, "1679"],
         [4, "1998"],
         ["correct", 1],
